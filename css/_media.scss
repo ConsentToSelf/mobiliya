@@ -1,0 +1,241 @@
+@media (max-width: 1200px) {
+  // Сделал 1200, так как сам сайт начинает ужиматься на такой ширине.
+  .cart {
+    &__content {
+      grid-column: span 12;
+    }
+    &__form {
+      grid-column: span 6;
+    }
+  }
+  .center {
+    padding-left: calc(50% - 786px / 2);
+    padding-right: calc(50% - 786px / 2);
+  }
+  .furniture {
+    &__item {
+      height: 268px;
+    }
+  }
+  .special__content,
+  .catalog__content {
+    column-gap: 29px;
+    row-gap: 39px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .special__item,
+  .catalog__item {
+    width: 345px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    &__mobile-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    &__nav,
+    &__input {
+      display: none;
+    }
+    .logo-image {
+      width: 99px;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      font-size: 48px;
+      line-height: 59px;
+      text-align: center;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .furniture {
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__wrapper {
+      display: grid;
+      gap: 16px;
+    }
+    &__item {
+      grid-column: 1 / -1;
+      height: 375px;
+      &-title {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+    &__big {
+      height: 243px;
+    }
+  }
+  .special {
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__item {
+      &-title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &-price {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &__title {
+      text-align: center;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  .catalog {
+    &__main-title {
+      text-align: center;
+      font-size: 48px;
+      line-height: 59px;
+    }
+    &__link {
+      display: block;
+      text-align: center;
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      text-align: center;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__item {
+      &-title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &-price {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &-img {
+        width: 100%;
+      }
+    }
+  }
+  .footer {
+    &__content {
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+  .choice {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__left-img {
+      display: none;
+    }
+    &__info {
+      &-title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &-text {
+        font-size: 12px;
+        line-height: 15px;
+      }
+      &-price {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 410px) {
+  .special {
+    &__title {
+      text-align: left;
+    }
+  }
+  .catalog {
+    &__title {
+      text-align: left;
+    }
+    &__link {
+      display: block;
+      text-align: left;
+    }
+  }
+  .choice {
+    align-items: flex-start;
+  }
+  .cart {
+    &__settings {
+      &-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__content, &__form {
+      width: 100%;
+    }
+    &__form{
+      padding: 0 20px;
+      &-list{
+        &_input {
+          width: inherit;
+        }
+        &_btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    &__info {
+      gap: 100px;
+    }
+  }
+}
